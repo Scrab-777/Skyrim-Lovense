@@ -1,4 +1,4 @@
-set_xmakever("2.9.5")
+set_xmakever("3.1.1")
 
 -- Globals
 PROJECT_NAME = "SkyrimLovense"
@@ -7,7 +7,7 @@ PROJECT_NAME = "SkyrimLovense"
 set_project(PROJECT_NAME)
 set_version("1.0.0")
 set_languages("cxx23")
-set_license("apache-2.0")
+set_license("gplv3")
 set_warnings("allextra", "error")
 
 -- Options
@@ -51,7 +51,7 @@ target(PROJECT_NAME)
     add_deps("commonlibsse-ng")
     add_rules("commonlibsse-ng.plugin", {
         name = PROJECT_NAME,
-        author = "KrisV777",
+        author = "KrisV-777",
         description = "API to interact with Lovense Toys through Papyrus"
     })
 
